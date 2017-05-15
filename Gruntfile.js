@@ -98,6 +98,26 @@ module.exports = function (grunt) {
                 }
             }
         },
+        sass: {
+            production: {
+                options: {
+                    // cleancss: true,
+                    // compress: true,
+                    // paths: 'node_modules'
+                },
+                files: {
+                    'build/css/bootstrap-datetimepicker.min.css': 'src/sass/bootstrap-datetimepicker-build.scss'
+                }
+            },
+            development: {
+                options: {
+                    // paths: 'node_modules'
+                },
+                files: {
+                    'build/css/bootstrap-datetimepicker.css': 'src/sass/bootstrap-datetimepicker-build.scss'
+                }
+            }
+        },
         env: {
             paris: {
                 TZ: 'Europe/Paris' // sets env for phantomJS https://github.com/ariya/phantomjs/issues/10379#issuecomment-36058589
@@ -158,20 +178,20 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-nuget');
 
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('default', ['jshint', 'jscs', 'less', 'env:paris', 'connect', 'jasmine']);
+    grunt.registerTask('default', ['jshint', 'jscs', 'sass', 'env:paris', 'connect', 'jasmine']);
     grunt.registerTask('build:travis', [
         // code style
         'jshint', 'jscs',
         // build
-        'uglify', 'less',
+        'uglify', 'sass',
         // tests
         'env:paris', 'connect', 'jasmine'
     ]);
 
     // Task to be run when building
-    grunt.registerTask('build', ['jshint', 'jscs', 'uglify', 'less']);
+    grunt.registerTask('build', ['jshint', 'jscs', 'uglify', 'sass']);
 
-    grunt.registerTask('test', ['jshint', 'jscs', 'uglify', 'less', 'env:paris', 'connect', 'jasmine']);
+    grunt.registerTask('test', ['jshint', 'jscs', 'uglify', 'sass', 'env:paris', 'connect', 'jasmine']);
 
     grunt.registerTask('docs', 'Generate docs', function () {
         grunt.util.spawn({

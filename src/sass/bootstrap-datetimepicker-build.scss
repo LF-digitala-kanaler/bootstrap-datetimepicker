@@ -1,5 +1,10 @@
 // Import bootstrap variables including default color palette and fonts
-//@import "../../node_modules/bootstrap/less/variables.less";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$bs-datetimepicker-border-radius: $border-radius !default;
+$screen-sm-min: map-get($grid-breakpoints, sm) !default;
+$screen-md-min: map-get($grid-breakpoints, md) !default;
+$screen-lg-min: map-get($grid-breakpoints, lg) !default;
 
 .sr-only {
   position: absolute;
