@@ -101,9 +101,6 @@ module.exports = function (grunt) {
         sass: {
             production: {
                 options: {
-                    // cleancss: true,
-                    // compress: true,
-                    // paths: 'node_modules'
                 },
                 files: {
                     'build/css/bootstrap-datetimepicker.min.css': 'src/sass/bootstrap-datetimepicker-build.scss'
@@ -111,7 +108,6 @@ module.exports = function (grunt) {
             },
             development: {
                 options: {
-                    // paths: 'node_modules'
                 },
                 files: {
                     'build/css/bootstrap-datetimepicker.css': 'src/sass/bootstrap-datetimepicker-build.scss'
