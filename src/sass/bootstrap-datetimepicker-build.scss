@@ -1,4 +1,5 @@
 // Import bootstrap variables including default color palette and fonts
+@import '../../node_modules/bootstrap/scss/functions';
 @import "../../node_modules/bootstrap/scss/variables";
 
 $bs-datetimepicker-border-radius: $border-radius !default;
