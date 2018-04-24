@@ -1,8 +1,3 @@
-// Import bootstrap variables including default color palette and fonts
-@import '../../node_modules/bootstrap/scss/functions';
-@import "../../node_modules/bootstrap/scss/variables";
-
-
 /*!
  * Datetimepicker for Bootstrap 3
  * ! version : 4.7.14
@@ -12,9 +7,9 @@ $bs-datetimepicker-timepicker-font-size: 1.2em !default;
 $bs-datetimepicker-active-bg: #ad1015 !default;
 $bs-datetimepicker-active-color: #fff !default;
 $bs-datetimepicker-border-radius: 0 !default;
-$bs-datetimepicker-btn-hover-bg: $gray-200 !default;
-$bs-datetimepicker-disabled-color: $gray-600 !default;
-$bs-datetimepicker-alternate-color: $gray-600 !default;
+$bs-datetimepicker-btn-hover-bg: #e9ecef !default;
+$bs-datetimepicker-disabled-color: #6c757d !default;
+$bs-datetimepicker-alternate-color: #6c757d !default;
 $bs-datetimepicker-secondary-border-color: #ccc !default;
 $bs-datetimepicker-secondary-border-color-rgba: rgba(0, 0, 0, 0.2) !default;
 $bs-datetimepicker-primary-border-color: white !default;
