@@ -401,7 +401,7 @@
                 });
                 return dataOptions;
             },
-            
+
             place = function () {
                 var position = element.position(),
                     offset = element.offset(),
