@@ -401,10 +401,10 @@
                 });
                 return dataOptions;
             },
-
+            
             place = function () {
-                var position = (component || element).position(),
-                    offset = (component || element).offset(),
+                var position = element.position(),
+                    offset = element.offset(),
                     vertical = options.widgetPositioning.vertical,
                     horizontal = options.widgetPositioning.horizontal,
                     parent;
@@ -420,7 +420,7 @@
                     parent = element;
                     element.children().first().after(widget);
                 }
-
+                
                 // Top and bottom logic
                 if (vertical === 'auto') {
                     if (offset.top + widget.height() * 1.5 >= $(window).height() + $(window).scrollTop() &&
