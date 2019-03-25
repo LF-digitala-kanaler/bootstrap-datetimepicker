@@ -1,4 +1,4 @@
-/*! version : 4.17.47
+/*! version : 4.17.50,
  =========================================================
  bootstrap-datetimejs
  https://github.com/Eonasdan/bootstrap-datetimepicker
@@ -403,8 +403,8 @@
             },
 
             place = function () {
-                var position = element.position(),
-                    offset = element.offset(),
+                var position = (component || element).position(),
+                    offset = (component || element).offset(),
                     vertical = options.widgetPositioning.vertical,
                     horizontal = options.widgetPositioning.horizontal,
                     parent;
@@ -420,7 +420,7 @@
                     parent = element;
                     element.children().first().after(widget);
                 }
-                
+
                 // Top and bottom logic
                 if (vertical === 'auto') {
                     if (offset.top + widget.height() * 1.5 >= $(window).height() + $(window).scrollTop() &&

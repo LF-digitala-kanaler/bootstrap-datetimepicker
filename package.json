@@ -1,7 +1,5 @@
 {
-  "author": {
-    "name": "Jonathan Peterson"
-  },
+  "author": "Jonathan Peterson",
   "bugs": {
     "url": "https://github.com/eonasdan/bootstrap-datetimepicker/issues"
   },
@@ -19,12 +17,12 @@
   },
   "description": "A date/time picker component designed to work with Bootstrap 3 and Momentjs. For usage, installation and demos see Project Site on GitHub",
   "devDependencies": {
-    "grunt": "latest",
+    "grunt": "^1.0.4",
     "grunt-contrib-connect": "^1.0.1",
     "grunt-contrib-jasmine": "^1.0.3",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-less": "latest",
-    "grunt-contrib-sass": "file:node_modules/grunt-contrib-sass",
+    "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "latest",
     "grunt-env": "^0.4.4",
     "grunt-jscs": "latest",
@@ -46,7 +44,14 @@
   "name": "eonasdan-bootstrap-datetimepicker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eonasdan/bootstrap-datetimepicker.git"
+    "url": "git+https://github.com/eonasdan/bootstrap-datetimepicker.git"
   },
-  "version": "4.17.50"
+  "version": "4.17.50",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
