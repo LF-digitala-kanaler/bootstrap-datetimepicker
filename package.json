@@ -1,5 +1,7 @@
 {
-  "author": "Jonathan Peterson",
+  "author": {
+    "name": "Jonathan Peterson"
+  },
   "bugs": {
     "url": "https://github.com/eonasdan/bootstrap-datetimepicker/issues"
   },
@@ -12,7 +14,7 @@
   "dependencies": {
     "bootstrap": "4.0.0-alpha.5",
     "jquery": "^1.8.3 || ^2.0 || ^3.0",
-    "moment": "^2.19.3",
+    "moment": "^2.21.0",
     "moment-timezone": "^0.4.0"
   },
   "description": "A date/time picker component designed to work with Bootstrap 3 and Momentjs. For usage, installation and demos see Project Site on GitHub",
@@ -44,14 +46,7 @@
   "name": "eonasdan-bootstrap-datetimepicker",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eonasdan/bootstrap-datetimepicker.git"
+    "url": "https://github.com/eonasdan/bootstrap-datetimepicker.git"
   },
-  "version": "4.17.50",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "version": "4.17.47"
 }
